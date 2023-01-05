@@ -1,0 +1,125 @@
+.header
+    background: url(../img/teamwork.png) no-repeat center top
+    height: 560px
+    background-attachment: fixed
+    .box
+        &-nav
+            display: flex
+            justify-content: space-around
+            align-items: center
+            height: 120px
+            width: 100%
+            &-logo
+                height: 120px
+                width: 280px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                flex-wrap: wrap
+                span
+                    color: white
+                    font-family: "Noto Sans KR", sans-serif
+                    font-size: 24px
+                    font-weight: 700
+                    text-transform: uppercase
+                img
+                    width: 50px
+                    height: 50px
+            &-menu
+                display: flex
+                justify-content: space-around
+                align-items: center
+                width: 40%
+                height: 100px
+                flex-wrap: wrap
+                flex-direction: row
+                &-href
+                    text-decoration: none
+                    color: white
+                    font-family: "Noto Sans KR", sans-serif
+                    text-transform: uppercase
+                    font-size: 14px
+                .contact
+                    font-family: "Noto Sans KR", sans-serif
+                    text-decoration: none
+                    text-transform: uppercase
+                    color: white
+                    border: 2px solid white
+                    padding: 4px 8px
+                    font-size: 14px
+                a
+                    opacity: 0.8
+                a:hover
+                    opacity: 1
+        
+                .box-nav-menu-href::after
+                    display: flex
+                    content: ""
+                    width: 100%
+                    height: 1px
+                    background-color: #fff
+                    transform: scaleX(0)
+                    transition-duration: 0.5s
+                
+                .box-nav-menu-href:hover::after
+                    transform: scaleX(1)
+        &-text
+            width: 100%
+            height: 440px
+            color: white
+            font-family: "Noto Sans KR", sans-serif
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            h1
+                font-weight: 900
+                font-size: 40px
+            h2
+                font-weight: 300
+                font-size: 18px
+                text-align: center
+.bg
+    background-color: rgba(3, 153, 0, 0.6)
+    width: 100% 
+    height: 560px
+    z-index: 100
+
+    @media screen and ( max-width: 860px )
+        .box-nav-menu-href
+            margin: 0 5px
+        
+    @media screen and ( max-width: 600px )
+        .box-nav-menu-href
+            margin: 0 5px
+        .box-nav-logo
+            display: flex
+            flex-direction: column-reverse
+            justify-content: center
+            
+            
+    @media screen and (max-width: 400px)
+        .box
+            &-nav
+                
+                flex-direction: column
+                justify-content: center
+                &-menu
+                    width: 280px
+                    height: 50px
+                    flex-wrap: wrap
+                    flex-direction: row
+                    &-href
+                        margin-bottom: 10px
+                                                 
+                &-logo
+                    
+                    width: 280px
+                    height: 50px
+                    margin: 20px 10px 20px 10px
+                    
+            
+        
+
+    
+    
